@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pt-md">
+  <div class="">
     <div contenteditable="true" ref="element" @keydown="noEnter" :class="type">
       Formulario sin titulo
     </div>
@@ -38,13 +38,13 @@ div {
   height: 100px;
   height: max-content;
   position: relative;
-  border-bottom: 1px solid #7f7f7f;
+  /* border-bottom: 1px solid #7f7f7f; */
   color: rgb(63, 63, 63);
 }
 
 span {
   position: absolute;
-  border-bottom: 5px solid #1c87c9;
+  border-bottom: 3px solid #1c87c9;
   width: 0;
   bottom: 0;
   left: 0;
@@ -61,5 +61,9 @@ div:focus ~ span {
 
 .subtitle {
   font-size: 32px;
+}
+
+.question {
+  font-size: 24px;
 }
 </style>

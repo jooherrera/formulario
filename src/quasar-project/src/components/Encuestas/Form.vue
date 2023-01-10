@@ -1,19 +1,20 @@
 <template>
   <div class="q-pa-md q-gutter-sm form">
     <q-btn label="Console" color="primary" @click="clicked" />
-    <Title ref="title" type="title" />
-    <Title ref="title" type="subtitle" />
+    <Header ref="header" />
+    <Question ref="" />
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
-import Title from "./Title.vue";
+import Header from "./Header.vue";
+import Question from "./Question.vue";
 
-const title = ref(null);
+const header = ref(null);
 
 const clicked = () => {
-  console.log(title.value.toText());
+  console.log(header.value.getData());
 };
 </script>
 <style scoped>
