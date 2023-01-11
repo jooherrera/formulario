@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="container">
     <div contenteditable="true" ref="element" @keydown="noEnter" :class="type">
       Formulario sin titulo
     </div>
@@ -30,6 +30,10 @@ defineExpose({ toText });
 </script>
 
 <style scoped>
+.container {
+  width: 100%;
+}
+
 div {
   /* font-size: 54px; */
   margin: 0;
